@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Servicios || Honduplay</title>
+	<link rel="icon" href="../Img/game-gaming-8-svgrepo-com.svg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin /><!--Letra a usarse-->
+	<link rel="stylesheet" href="./factura/factura.html">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+    <link rel="stylesheet" href="./Style.css">
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Playfair+Display:700|Raleway:500.700'><link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Play&display=swap" rel="stylesheet">
+</head>
+<body>
+	<div class="lds-ring loader" id="loader"><div></div><div></div><div></div><div></div></div>
+    <!-- Inicio del header -->
+    <header>
+        <nav class="navbar">
+            <img class="navbar-logo" src="../Img/game-gaming-9-svgrepo-com.svg" /> 
+            <div class="img-container">
+                <a href="../Login/index.html" class="bottom"><img src="../Img/user-svgrepo-com.svg"></a> 
+                <div class="my-image">
+                    <div class="description">
+                        !Regístrate!
+                    </div>
+                </div>  
+            </div>
+            <!--Formar un boton-->
+            <!-- Logo de la pagina -->
+        </nav>
+        
+        <button class="navbar-burger" onclick="toggleMenu()"></button>
+        <!--  -->
+        <nav class="menu">
+            <a href="../Index.html" style="animation-delay: 0.1s">Inicio</a>
+            <a href="./Index.html" style="animation-delay: 0.2s">Servicios</a>
+            <a href="../Contactanos/Index.html" style="animation-delay: 0.3s">Contactanos</a>
+            <a href="../Nosotros/Index.html" style="animation-delay: 0.4s">Nosotros</a>
+        </nav>
+        <!-- Menu de la pagina -->
+    </header>
+    <!--Cartas de presentacion-->
+    <main>
+      	<header>
+			<h1>Tienda</h1>
+			<article>
+					<div class="container-icon">
+						<div class="container-cart-icon">
+							<img class="bag" src="./img/bag-svgrepo-com.svg">
+							<div class="count-products">
+								<span id="contador-productos">0</span>
+							</div>
+						</div>
+		
+						<div class="container-cart-products hidden-cart">
+							<div class="row-product hidden">
+								<div class="cart-product">
+									<div class="info-cart-product">
+									</div>
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										fill="none"
+										viewBox="0 0 24 24"
+										stroke-width="1.5"
+										stroke="currentColor"
+										class="icon-close"
+									>
+										<path
+											stroke-linecap="round"
+											stroke-linejoin="round"
+											d="M6 18L18 6M6 6l12 12"
+										/>
+									</svg>
+								</div>
+							</div>
+		
+							<div class="cart-total hidden">
+								<h3>Total:</h3>
+								<span class="total-pagar"></span>
+								<!-- Boton Pagar -->
+								<button class="btn-pay" onclick="location.href='../factura/Index.html'">PAGAR</button>
+							</div>
+							<p class="cart-empty">El carrito está vacío</p>
+						</div>
+					</div>
+		</header>
+				<div class="container-items">
+					<div class="item">
+						<figure>
+							<img
+								src="https://cdn2.unrealengine.com/Diesel%2Fproductv2%2Fgrand-theft-auto-v%2Fhome%2FGTAV_EGS_Artwork_1920x1080_Hero-Carousel_V06-1920x1080-1503e4b1320d5652dd4f57466c8bcb79424b3fc0.jpg"
+								alt="producto"
+							/>
+						</figure>
+						<div class="info-product">
+							<h2>GTA V Premiun edition</h2>
+							<p class="price">L1000.00</p>
+							<button class="btn-add-cart">Añadir al carrito</button>
+						</div>
+					</div>
+					<div class="item">
+						<figure>
+							<img
+								src="https://img.hype.games/cdn/9c82dfa9-d27a-445c-9bd9-2b0065ee534bmk11-cover.jpg"
+								alt="producto"
+							/>
+						</figure>
+						<div class="info-product">
+							<h2>Mortal Kombat 11</h2>
+							<p class="price">L1600.00</p>
+							<button class="btn-add-cart">Añadir al carrito</button>
+						</div>
+					</div>
+					<div class="item">
+						<figure>
+							<img
+								src="https://image.api.playstation.com/vulcan/ap/rnd/202207/1210/4xJ8XB3bi888QTLZYdl7Oi0s.png"
+								alt="producto"
+							/>
+						</figure>
+						<div class="info-product">
+							<h2>God of war Ragnarok</h2>
+							<p class="price">L1600.00</p>
+							<button class="btn-add-cart">Añadir al carrito</button>
+						</div>
+					</div>
+					<div class="item">
+						<figure>
+							<img
+								src="https://image.api.playstation.com/vulcan/ap/rnd/202301/0312/yM0eeJui8AFByeP5BC5XV5j9.png"
+								alt="producto"
+							/>
+						</figure>
+						<div class="info-product">
+							<h2>FIFA 23</h2>
+							<p class="price">L1300.00</p>
+							<button class="btn-add-cart">Añadir al carrito</button>
+						</div>
+					</div>
+					<div class="item">
+						<figure>
+							<img
+								src="https://sm.ign.com/ign_es/game/r/rainbow-si/rainbow-six-siege_d2b2.jpg"
+								alt="producto"
+							/>
+						</figure>
+						<div class="info-product">
+							<h2>Rainbow Six Siege</h2>
+							<p class="price">L1100.00</p>
+							<button class="btn-add-cart">Añadir al carrito</button>
+						</div>
+					</div>
+					<div class="item">
+						<figure>
+							<img
+								src="https://sm.ign.com/t/ign_latam/screenshot/default/nfs-heat-11_73e2.1280.jpg"
+								alt="producto"
+							/>
+						</figure>
+						<div class="info-product">
+							<h2>Need for speed Heat</h2>
+							<p class="price">L1500.00</p>
+							<button class="btn-add-cart">Añadir al carrito</button>
+						</div>
+					</div>
+					<div class="item">
+						<figure>
+							<img
+								src="https://i.blogs.es/b109e9/cyberpunk2077-johnny-v-rgb_en/1366_2000.jpg"
+								alt="producto"
+							/>
+						</figure>
+						<div class="info-product">
+							<h2>Cyberpunk 2077</h2>
+							<p class="price">L1000.00</p>
+							<button class="btn-add-cart">Añadir al carrito</button>
+						</div>
+					</div>
+					<div class="item">
+						<figure>
+							<img
+								src="https://i.blogs.es/169695/red0/840_560.jpg"
+								alt="producto"
+							/>
+						</figure>
+						<div class="info-product">
+							<h2>Read Dead Redemption 2</h2>
+							<p class="price">L1200.00</p>
+							<button class="btn-add-cart">Añadir al carrito</button>
+						</div>
+					</div>
+					<div class="item">
+						<figure>
+							<img
+								src="https://cdn.akamai.steamstatic.com/steam/apps/292030/capsule_616x353.jpg?t=1675178392"
+								alt="producto"
+							/>
+						</figure>
+						<div class="info-product">
+							<h2>The Witcher 3</h2>
+							<p class="price">L1600.00</p>
+							<button class="btn-add-cart">Añadir al carrito</button>
+						</div>
+					</div>
+					<div class="item">
+						<figure>
+							<img
+								src="https://cdn.cloudflare.steamstatic.com/steam/apps/1888930/capsule_616x353.jpg?t=1676314660"
+								alt="producto"
+							/>
+						</figure>
+						<div class="info-product">
+							<h2>The Last Of Us</h2>
+							<p class="price">L1450.00</p>
+							<button class="btn-add-cart">Añadir al carrito</button>
+						</div>
+					</div>
+					<div class="item">
+						<figure>
+							<img
+								src="https://image.api.playstation.com/vulcan/ap/rnd/202208/0921/dR9KJAKDW2izPbptHQbh3rnj.png"
+								alt="producto"
+							/>
+						</figure>
+						<div class="info-product">
+							<h2>Hogwarts Legacy</h2>
+							<p class="price">L1600.00</p>
+							<button class="btn-add-cart">Añadir al carrito</button>
+						</div>
+					</div>
+					<div class="item">
+						<figure>
+							<img
+								src="https://image.api.playstation.com/vulcan/ap/rnd/202110/2000/phvVT0qZfcRms5qDAk0SI3CM.png"
+								alt="producto"
+							/>
+						</figure>
+						<div class="info-product">
+							<h2>Elden Ring</h2>
+							<p class="price">L1500.00</p>
+							<button class="btn-add-cart">Añadir al carrito</button>
+						</div>
+					</div>
+					<div class="item">
+						<figure>
+							<img
+								src="https://image.api.playstation.com/vulcan/ap/rnd/202211/1416/HXBxcRRNOpjREOW3GpBndz3u.png"
+								alt="producto"
+							/>
+						</figure>
+						<div class="info-product">
+							<h2>Assassin's Creed Valhalla</h2>
+							<p class="price">L1300.00</p>
+							<button class="btn-add-cart">Añadir al carrito</button>
+						</div>
+					</div>
+					<div class="item">
+						<figure>
+							<img
+								src="https://assets-prd.ignimgs.com/2022/12/06/destiny-2-lightfall-button-fin-1670289439645.jpg"
+								alt="producto"
+							/>
+						</figure>
+						<div class="info-product">
+							<h2>Destiny 2 Lightfall</h2>
+							<p class="price">L1100.00</p>
+							<button class="btn-add-cart">Añadir al carrito</button>
+						</div>
+					</div>
+					<div class="item">
+						<figure>
+							<img
+								src="https://image.api.playstation.com/vulcan/img/rnd/202106/1514/fkPaEpz998Uu7QaofSj1VIhr.png"
+								alt="producto"
+							/>
+						</figure>
+						<div class="info-product">
+							<h2>Far Cry 6</h2>
+							<p class="price">L1200.00</p>
+							<button class="btn-add-cart">Añadir al carrito</button>
+						</div>
+					</div>
+				</div>
+    </main>
+    <!--Final de la página-->
+    <footer>
+        <div class="footer">
+            <div class="row">
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-instagram"></i></a>
+                <a href="https://www.youtube.com/channel/UCr_07uZgyTfGEMX6c4trErA"><i class="fa fa-youtube"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+            </div>
+        
+        <div class="row">
+            <ul>
+                <li><a href="../Index.html">Inicio</a></li>
+                <li><a href="./Index.html">Servicios</a></li>
+                <li><a href="../Contactanos/Index.html">Contactanos</a></li>
+                <li><a href="../Nosotros/Index.html">Nosotros</a></li>
+            </ul>
+        </div>
+        
+        <div class="row">|| Copyright © 2023 HGaming - Derechos Reservados ||</div>
+        </div>
+    </footer>
+    <script type="text/javascript">
+        const toggleMenu = () => {
+          document.body.classList.toggle("open");
+        };
+    </script>
+    <script  src="./js/script.js"></script>
+    <script src="./Script.js"></script>
+</body>
+</html>

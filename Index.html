@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <title>Inicio || Honduplay</title>
+    <link rel="icon" href="./Img/game-gaming-8-svgrepo-com.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Maven+Pro&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin /><!--Letra a usarse-->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+    <link rel="stylesheet" href="./Style.css">
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Playfair+Display:700|Raleway:500.700'><link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Play&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  <div class="lds-ring loader" id="loader"><div></div><div></div><div></div><div></div></div>
+    <!-- Inicio del header -->
+    <header>
+        <nav class="navbar">
+            <img class="navbar-logo" src="./Img/game-gaming-9-svgrepo-com.svg" /> 
+            <div class="img-container">
+                <a href="./Login/index.html" class="bottom"><img src="./Img/user-svgrepo-com.svg"></a> 
+                <div class="my-image">
+                    <div class="description">
+                        !Regístrate!
+                    </div>
+                </div>  
+            </div>
+            <!--Formar un boton-->
+            <!-- Logo de la pagina -->
+        </nav>
+        
+        <button class="navbar-burger" onclick="toggleMenu()"></button>
+        <!--  -->
+        <nav class="menu">
+            <a href="Index.html" style="animation-delay: 0.1s">Inicio</a>
+            <a href="./Servicios/Index.html" style="animation-delay: 0.2s">Servicios</a>
+            <a href="./Contactanos/Index.html" style="animation-delay: 0.3s">Contactanos</a>
+            <a href="./Nosotros/Index.html" style="animation-delay: 0.4s">Nosotros</a>
+        </nav>
+        <!-- Menu de la pagina -->
+    </header>
+    <!-- Final del header -->
+    <!-- Inicio del main -->
+    <div class="title">
+      <h1 data-value="HONDUPLAY" class="hond">HONDUPLAY</h1>
+    </div>
+    <div class="tituleiton">
+      <h1>Juegos <span>Destacados</span></h1>
+    </div>
+    <main>
+      <!--Cartas de presentacion-->
+      <div id="app" class="container">
+        <card data-image="https://i.blogs.es/b9a176/image_2022-06-09_222051649/1366_2000.png">
+          <h1 slot="header">The Last Of Us</h1>
+          <p slot="content">Es una franquicia de juegos de terror y supervivencia de acción.</p>
+        </card>
+        <card data-image="https://gamereviewer720063748.files.wordpress.com/2022/10/1173124.jpg">
+          <h1 slot="header">God Of War</h1>
+          <p slot="content">Es un juego de acción y aventuras desarrollado por Santa Monica Studio</p>
+        </card>
+        <card data-image="https://image.api.playstation.com/vulcan/ap/rnd/202110/2000/phvVT0qZfcRms5qDAk0SI3CM.png">
+          <h1 slot="header">Elden Ring</h1>
+          <p slot="content">Ofrece vastos parajes de fantasía y sombrías e intricadas mazmorras que están conectadas de forma fluida y sin interrupciones.</p>
+        </card>
+        <card data-image="https://ftw.usatoday.com/wp-content/uploads/sites/90/2022/11/Call-of-Duty-Modern-Warfare-II-maps-glhf-1.jpg?w=1000&h=600&crop=1">
+          <h1 slot="header">Modern Warfare 2</h1>
+          <p slot="content">El juego sigue la historia de un conflicto global en curso, en el que las fuerzas militares de los Estados Unidos y la OTAN.</p>
+        </card>
+        <card data-image="https://image.api.playstation.com/vulcan/ap/rnd/202206/0300/E2vZwVaDJbhLZpJo7Q10IyYo.png">
+          <h1 slot="header">Stray</h1>
+          <p slot="content">Ve el mundo a través de los ojos de un gato callejero e interactúa con el entorno de formas creativas.</p>
+        </card><card data-image="https://cdn1.epicgames.com/offer/e97659b501af4e3981d5430dad170911/EGS_HogwartsLegacy_AvalancheSoftware_S2_1200x1600-2bb94423bf1c7e2fca10577d9f2878b9">
+          <h1 slot="header">Hogwarts Legacy</h1>
+          <p slot="content">Es un RPG de acción en un mundo abierto, ambientado en el mundo mágico del siglo XIX, el cual coloca a los jugadores en el centro de sus propias aventuras.</p>
+        </card>
+      </div>
+    </main>
+    <!-- Top 5 -->
+    <div class="descripcion">
+      <div class="tituleiton">
+        <h1><span>Top 5</span></h1>
+      </div>
+      <main class="main2">
+        <div class="container-items">
+          <div class="item">
+            <figure>
+              <img
+                src="https://cdn2.unrealengine.com/Diesel%2Fproductv2%2Fgrand-theft-auto-v%2Fhome%2FGTAV_EGS_Artwork_1920x1080_Hero-Carousel_V06-1920x1080-1503e4b1320d5652dd4f57466c8bcb79424b3fc0.jpg"
+                alt="producto"
+              />
+            </figure>
+            <div class="info-product">
+              <h2>GTA V Premiun edition</h2>
+              <p class="price">L1000.00</p>
+              <button class="btn-add-cart" onclick="document.location='./Servicios/Index.html'">Mas Info.</button>
+            </div>
+          </div>
+          <div class="item">
+            <figure>
+              <img
+                src="https://img.hype.games/cdn/9c82dfa9-d27a-445c-9bd9-2b0065ee534bmk11-cover.jpg"
+                alt="producto"
+              />
+            </figure>
+            <div class="info-product">
+              <h2>Mortal Kombat 11</h2>
+              <p class="price">L1600.00</p>
+              <button class="btn-add-cart" onclick="document.location='./Servicios/Index.html'">Mas Info.</button>
+            </div>
+          </div>
+          <div class="item">
+            <figure>
+              <img
+                src="https://image.api.playstation.com/vulcan/ap/rnd/202207/1210/4xJ8XB3bi888QTLZYdl7Oi0s.png"
+                alt="producto"
+              />
+            </figure>
+            <div class="info-product">
+              <h2>God of war Ragnarok</h2>
+              <p class="price">L1600.00</p>
+              <button class="btn-add-cart" onclick="document.location='./Servicios/Index.html'">Mas Info.</button>
+            </div>
+          </div>
+          <div class="item">
+						<figure>
+							<img
+								src="https://image.api.playstation.com/vulcan/ap/rnd/202301/0312/yM0eeJui8AFByeP5BC5XV5j9.png"
+								alt="producto"
+							/>
+						</figure>
+						<div class="info-product">
+							<h2>FIFA 23</h2>
+							<p class="price">L1300.00</p>
+							<button class="btn-add-cart" onclick="document.location='./Servicios/Index.html'">Mas Info.</button>
+						</div>
+					</div>
+          <div class="item">
+						<figure>
+							<img
+								src="https://sm.ign.com/ign_es/game/r/rainbow-si/rainbow-six-siege_d2b2.jpg"
+								alt="producto"
+							/>
+						</figure>
+						<div class="info-product">
+							<h2>Rainbow Six Siege</h2>
+							<p class="price">L1100.00</p>
+							<button class="btn-add-cart" onclick="document.location='./Servicios/Index.html'">Mas Info.</button>
+						</div>
+					</div>
+        </div>
+      </main>
+    </div>
+
+    <!--Final de la página-->
+    <footer>
+        <div class="footer">
+            <div class="row">
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-instagram"></i></a>
+                <a href="https://www.youtube.com/channel/UCr_07uZgyTfGEMX6c4trErA"><i class="fa fa-youtube"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+            </div>
+        
+        <div class="row">
+            <ul>
+                <li><a href="Index.html">Inicio</a></li>
+                <li><a href="./Servicios/Index.html">Servicios</a></li>
+                <li><a href="./Contactanos/Index.html">Contactanos</a></li>
+                <li><a href="./Nosotros/Index.html">Nosotros</a></li>
+            </ul>
+        </div>
+        
+        <div class="row">|| Copyright © 2023 HGaming - Derechos Reservados ||</div>
+        </div>
+    </footer>
+    <script type="text/javascript">
+        const toggleMenu = () => {
+          document.body.classList.toggle("open");
+        };
+    </script>
+    <!-- js de las cartas -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.0.1/vue.min.js'></script>
+    <script  src="./script.js"></script>
+</body>
+</html>

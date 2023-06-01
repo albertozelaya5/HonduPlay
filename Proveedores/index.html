@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proveedores</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--Inicio del Menu -->
+    <aside class="sidebar">
+        <div class="sidebar-inner" >
+            <header class="sidebar-hidden">
+                <button class="sidebar-burger" onclick="toggleSlidebar( )">
+                </button>
+                <img src="../Img/blocklord-logo.png" alt="sidebar-logo" height="35px">
+            </header>
+            <nav class="sidebar-nav">
+                <button type="button" onclick="window.location.href='../Inventario/index.html'">
+                    <img src="../Img/inventario.png">
+                    <span style="animation-delay: 0.1s">Inventario</span>
+                </button>
+                <button type="button" onclick="window.location.href='../Facturaciones/index.html'">
+                    <img src="../Img/factura.png">
+                    <span style="animation-delay: 0.1s">Facturas</span>
+                </button>
+                <button type="button" onclick="window.location.href='../Proveedores/index.html'">
+                    <img src="../Img/proveedor.png">
+                    <span style="animation-delay: 0.1s">Proveedores</span>
+                </button>
+            </nav>
+            <footer class="sidebar-footer">
+              <button type="button" onclick="window.location.href='../index.html'">
+                <img src="../Img/lock.png">
+              <span style="animation-delay: 0.1s">Logout</span>
+              </button>
+            </footer>
+        </div>
+    </aside>
+    <!--Fin del Menu -->
+
+    <div class="div-titulo">
+        <h1>Proveedores</h1>
+    </div>
+    
+    <div class="contenedor">
+        <div class="div-formulario">
+            <h2>Formulario Proveedores</h2>
+
+            <form action="#" id="formulario">
+            <input type="text" id="nombre" placeholder="Ingrese nombre del proveedor">
+            <input type="text" id="cedula" placeholder="Ingrese cedula">
+            <input type="text" id="email" placeholder="Ingrese email">
+            <input type="text" id="movil" placeholder="Ingrese el telefono">
+            <button class="btn" type="submit" id="btnAgregar">Agregar</button>
+            </form>
+        </div>
+
+        <div class="div-listado">
+            <h2>Proveedores</h2>
+            <div class="div-inventario">
+                
+            </div>
+        </div>
+    </div>    
+
+    <script  src="app.js"></script>
+    
+    <!-- Por favor declarar el main con una clase -->
+    <script type="text/javascript">
+        const toggleSlidebar = () => 
+            document.body.classList.toggle("open");
+    </script>
+    <!-- El Script dejenlo de ultima, no lo toquen porfa -->
+</body>
+</html>

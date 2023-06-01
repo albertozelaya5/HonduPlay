@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Factura || Honduplay</title>
+    <link rel="icon" href="../img/game-gaming-8-svgrepo-com.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin /><!--Letra a usarse-->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+    <link rel="stylesheet" href="./Style.css">
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Playfair+Display:700|Raleway:500.700'><link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Play&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- <div class="lds-ring loader" id="loader"><div></div><div></div><div></div><div></div></div> -->
+    <!-- Inicio del header -->
+    <header>
+        <nav class="navbar">
+            <img class="navbar-logo" src="../Img/game-gaming-9-svgrepo-com.svg" /> 
+            <div class="img-container">
+                <a href="#" class="bottom"><img src="../Img/user-svgrepo-com.svg"></a> 
+                <div class="my-image">
+                    <div class="description">
+                        !Regístrate!
+                    </div>
+                </div>  
+            </div>
+            <!--Formar un boton-->
+            <!-- Logo de la pagina -->
+        </nav>
+        
+        <button class="navbar-burger" onclick="toggleMenu()"></button>
+        <!--  -->
+        <nav class="menu">
+            <a href="../Index.html" style="animation-delay: 0.1s">Inicio</a>
+            <a href="../Servicios/Index.html" style="animation-delay: 0.2s">Servicios</a>
+            <a href="../Contactanos/Index.html" style="animation-delay: 0.3s">Contactanos</a>
+            <a href="../Nosotros/Index.html" style="animation-delay: 0.4s">Nosotros</a>
+        </nav>
+        <!-- Menu de la pagina -->
+    </header>
+    <!--Final del header-->
+
+    <!-- Inicio del cuerpo -->
+    <!-- Fin el cuerpo -->
+    <script  src="./script.js"></script>
+
+    <main class="main"></main>
+    <div class="containerd">
+        <form onsubmit="sendEmail(); reset(); return false;">
+            <!-- <div class="titcon">
+                <h2>HonduPlay</h2>
+            </div> -->
+            <h2>Factura</h2>
+            <p class="parr">Numero Id</p><br><input type="text" name="idCliente" id="idCliente"/><br><br>
+            <p class="parr">Nombre Cliente</p> <br><input type="text" name="nombreCliente" id="nombreCliente"/><br><br>
+            <p class="parr">Direccion</p> <br><input type="text" name="direccionCliente" id="direccionCliente"/><br><br>
+            <p class="parr">Telefono</p> <br><input type="text" name="telefonoCliente" id="telefonoCliente"/><br><br>
+            <input class="btn" type="button" name="Continuar" onclick="generarFactura()"   value="Continuar"/>
+        </form>
+    </div>
+    </main>
+
+    <!-- Inicio del footer -->
+    <footer>
+        <div class="footer">
+            <div class="row">
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-instagram"></i></a>
+                <a href="https://www.youtube.com/channel/UCr_07uZgyTfGEMX6c4trErA"><i class="fa fa-youtube"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+            </div>
+        
+        <div class="row">
+            <ul>
+                <li><a href="../Index.html">Inicio</a></li>
+                <li><a href="../Servicios/Index.html">Servicios</a></li>
+                <li><a href="../Contactanos/Index.html">Contactanos</a></li>
+                <li><a href="../Nosotros/Index.html">Nosotros</a></li>
+            </ul>
+        </div>
+        
+        <div class="row">|| Copyright © 2023 HGaming - Derechos Reservados ||</div>
+        </div>
+    </footer>
+    <script type="text/javascript">
+        const toggleMenu = () => {
+          document.body.classList.toggle("open");
+        };
+    </script>
+    <!-- js de las cartas -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.0.1/vue.min.js'></script>
+</body>
+</html>

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Contactanos || Honduplay</title>
+    <link rel="icon" href="../Img/game-gaming-8-svgrepo-com.svg">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel='stylesheet' href='Style.css'>
+</head>
+<body>
+    <div class="lds-ring loader" id="loader"><div></div><div></div><div></div><div></div></div>
+    <header>
+        <nav class="navbar">
+            <img class="navbar-logo" src="./Img/game-gaming-9-svgrepo-com.svg" /> 
+            <div class="img-container">
+                <a href="../Login/index.html" class="bottom"><img src="./Img/user-svgrepo-com.svg"></a> 
+                <div class="my-image">
+                    <div class="description">
+                        !Regístrate!
+                    </div>
+                </div>  
+            </div>
+            <!--Formar un boton-->
+            <!-- Logo de la pagina -->
+        </nav>
+        
+        <button class="navbar-burger" onclick="toggleMenu()"></button>
+        <!--  -->
+        <nav class="menu">
+            <a href="../Index.html" style="animation-delay: 0.1s">Inicio</a>
+            <a href="../Servicios/Index.html" style="animation-delay: 0.2s">Servicios</a>
+            <a href="./Index.html" style="animation-delay: 0.3s">Contactanos</a>
+            <a href="../Nosotros/Index.html" style="animation-delay: 0.4s">Nosotros</a>
+        </nav>
+        <!-- Menu de la pagina -->
+    </header>
+    <main class="main"></main>
+    <div class="containerd">
+        <form onsubmit="sendEmail(); reset(); return false;">
+            <!-- <div class="titcon">
+                <h2>HonduPlay</h2>
+            </div> -->
+            <h2>Ponte en contacto</h2>
+            <input type="text" id="name" placeholder="Ingrese su nombre" required>
+            <input type="email" id="email" placeholder="Ingrese su correo" required>
+            <input type="text" id="phone" placeholder="Ingrese su telefono" required>
+            <textarea id="message" rows="5" placeholder="Explicanos lo que necesitas"></textarea>
+            <button type="submit">Enviar</button>
+
+        </form>
+    </div>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+        function sendEmail(){
+            Email.send({
+                SecureToken: "d1eea5a0-1022-49bc-8ec3-4e9ebddb0a77",
+                Host : "smtp.elasticemail.com",
+                Username : "playhondu2023@gmail.com",
+                Password : "F1E50967E6B3D7823D7D0D23AA19EEEE8403",
+                To : 'playhondu2023@gmail.com',
+                From : document.getElementById("email").value,
+                Subject : "Solicitante",
+                Body : "Nombre: " + document.getElementById("name").value
+                    + "<br> Email: " + document.getElementById("email").value
+                    + "<br> Telefono: " + document.getElementById("phone").value
+                    + "<br> Message: " + document.getElementById("message").value
+            }).then(
+            message => alert("Mensaje enviado exitosamente")
+            );
+        }
+    </script>
+</main>
+<section class="contenedor2 ">
+
+    <div class="titulo">
+      <h2>Mas sobre nosotros</h2>
+  </div>
+
+    <div class="iconos-nosotros">
+
+        <div class="iconos">
+            <img class="imagen"  src="./Img/cart-4-svgrepo-com.svg" alt="carrito">
+            <h3 class="encabe mayusculas">Envios a nivel nacional</h3>
+            <p>Contamos con envios a cualquier parte del territorio</p>
+        </div>
+        
+        <div class="iconos">
+            <img class="imagen" src="./Img/medal-star-svgrepo-com.svg" alt="medalla">
+            <h3 class="encabe mayusculas">Calidad en cada producto</h3>
+            <p>Calidad de los productos verificados</p>
+        </div>
+
+        <div class="iconos">
+            <img class="imagen" src="./Img/money-svgrepo-com.svg" alt="papel">
+            <h3 class="encabe mayusculas">Las mejores ofertas</h3>
+            <p>Los mejores precios del mercado</p>
+        </div>
+
+        <div class="iconos">
+            <img class="imagen" src="./Img/lock-on-svgrepo-com.svg" alt="candado">
+            <h3 class="encabe mayusculas">Pago seguro</h3>
+            <p>Tus pagos se realizan de manera segura</p>
+        </div>
+    </div>
+</section>
+<footer>
+    <div class="footer">
+        <div class="row">
+            <a href="https://www.facebook.com/profile.php?id=100090272679839"><i class="fa fa-facebook"></i></a>
+            <a href="https://www.instagram.com/hondu_play/"><i class="fa fa-instagram"></i></a>
+            <a href="https://www.youtube.com/channel/UCr_07uZgyTfGEMX6c4trErA"><i class="fa fa-youtube"></i></a>
+            <a href="https://twitter.com/HonduPlay"><i class="fa fa-twitter"></i></a>
+        </div>
+    
+    <div class="row">
+        <ul>
+            <li><a href="../Index.html">Inicio</a></li>
+            <li><a href="../Servicios/Index.html">Servicios</a></li>
+            <li><a href="../Contactanos/Index.html">Contactanos</a></li>
+            <li><a href="../Nosotros/Index.html">Nosotros</a></li>
+        </ul>
+    </div>
+    
+    <div class="row">|| Copyright © 2023 HGaming - Derechos Reservados ||</div>
+    </div>
+</footer>
+<script type="text/javascript">
+    const toggleMenu = () => {
+      document.body.classList.toggle("open");
+    };
+</script>
+<!-- js de las cartas -->
+<script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.0.1/vue.min.js'></script>
+<script  src="./script.js"></script>
+</body>
+</html>
